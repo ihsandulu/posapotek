@@ -130,15 +130,8 @@ if($builder->countAll()>0){
                         <tr>
                             <th colspan="2" class="text-right">Total Tagihan</th>
                             <th>
-                                <?= number_format($dtprice,0,".",","); ?>
-                                <input type="hidden" id="tagihan" value="<?=$dtprice;?>"/>
-                            </th>
-                        </tr>
-                        <tr>
-                            <th colspan="2" class="text-right">Total</th>
-                            <th>
-                                <?= number_format($tprice,0,".",","); ?>
-                                <input type="hidden" id="tagihan" value="<?=$tprice;?>"/>
+                                <?= number_format($transaction->transaction_bill,0,".",","); ?>
+                                <input type="hidden" id="tagihan" value="<?=$transaction->transaction_bill;?>"/>
                             </th>
                         </tr>
                         <tr>
